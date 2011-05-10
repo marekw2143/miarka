@@ -1,0 +1,57 @@
+<h3>1. Requirements:</h3>
+This program works with PyQt4 version 4.4.3, it wasn't checked with other versions of PyQt4, but should work with all compatible versions of PyQt4
+<h3>2. Language:</h3>
+To change language of the program, you have to modify "language" file that is in the main app directory. Changes take effect after the program restarts. The "language" file consist of one line, which contains information about language code. Below are available language codes, and languages coded by them: 
+<ul>
+<li>code: <b>en</b> -> language: <b>english</b></li>
+<li>code: <b>pl</b> -> language: <b>polish</b></li>
+</ul>
+<h3>3. Program usage:</h3>
+<h4>3.1. General info:</h4>
+By the pointing device I'll understand the device that makes the cursor on the screen move. It can be mouse, or two mouses (one moves only on X axis, another only on Y axis)
+<h4>3.2. Menu:</h4>
+All keys are case insensitive:
+Keys meaning:
+<ul>
+<li>key: <b>a</b> -> meaning: <b>menu option up</b></li>
+<li>key: <b>z</b> -> meaning: <b>menu option down</b></li>
+<li>key: <b>k</b> -> meaning: <b>choose menu option</b></li>
+</ul>
+<h4>3.3. Calibration:</h4>
+<h5>3.3.1. General info:</h5>
+Before callibrating, it's good to make a copy of "options" file, which exists in the main app's directory. That file consists of two float numbers, each in separate line. The first one is ratio milimeter/cursor's points in X axis, the second show the ratio milimeter/cursor's points in Y axis.
+<h5>3.3.2. Callibration step-by-step:</h5>
+Below I'll describe callibration of X axis (callibration of axis Y is analogic):</br>
+1. To calibrate mouse (or other pointing device) you have to hoose  "Allow callibration" option from the menu. </br>
+2. Then after filling in the "SUWMIARKA" word, the callibration options are available. This is secured this way, so that the user doesn't change the calibration values accidentally. </br>
+3. After callibration options are available, you have to choose "Calibrate X axis" from the menu (for calibration of Y axis, of course choose "Calibrate Y axis" :)).</br>
+4. Then move your mouse the distance you know (for example 100 mm). If an error "Inproper reading from input device" happens, it means that the mouse moved 2 or more points at the time - then the program considers it's a mistake, so you should press ok by using space key, and repeat this step once again.</br>
+5. After you moved the mouse known distance, choose "Finish callibration" from the menu option. Then the message showing total amount of cursor's points mouse cursor has moved. Push "Ok" by pressing space.</br>
+6. In the next window, you're asked to enter the real distance the mouse (or other pointing device) has moved. Please enter the value in milimeters. Accept the entered value by pushing "Ok".</br>
+7. After that, the message showing the ratio: milimeter / cursor's points will appear. Press "Ok".</br>
+8. After that, you can write callibration settings to the file, by using "Save callibration" from the menu. If you don't want to save the settings, choose "Measuring mode" from the menu.But when selecting "Measuring mode", the calibration ratio that is computed in the step 6 is used until the program restarts.
+<h4>3.4. Menu options:</h4>
+<ul>
+<li><b>Reset</b>->sets distance ran by the pointing device in axis X and Y to 0, sets the distance the pointing device should run in X and Y axis to satisfy demands specified by user (see "Distance to measure in X axis" and "Distance to measure in Y axis" options) to the values user entered in that menu options.</li>
+<li><b>Measuring mode</b>->enters "MEASURING" mode (described in 3.5).</li>
+<li><b>Distance to measure in X axis</b>->allows to specify distance that should be measured in X axis.</li>
+<li><b>Distance to measure in Y axis</b>->allows to specify distance that should be measured in Y axis.</li>
+<li><b>Calibrate X axis</b>->starts callibration of X axis, more description in section 3.3.</li>
+<li><b>Calibrate Y axis</b>->starts callibration of Y axis, more description in section 3.3.</li>
+<li><b>Finish callibration</b>->finishes callibration, more description in section 3.3.</li>
+<li><b>Save callibration</b>->saves callibration values to the options file, more description in section 3.3.</li>
+<li><b>Allow callibration</b>->allows callibration, more description in section 3.3.</li>
+</ul>
+<h4>3.5. Simple usage:</h4>
+When in "MEASURING" mode (activated by choosing "Measuring mode" from the menu) then:
+<ul>
+<li>
+<li>the number after "X:" (on the top-left of the screen) shows total distance covered by the mouse in X axis (distance unit is the same unit you entered distance during callibration. If you did callibration as in instructions, the unit is milimeter).</li>
+<li>the number after the line "distance left:" (which is in the same line as number described above) shows distance that the mouse should run in the x axis so that the total distance ran from the last reset command (choosen from the menu) is the distance specified by the user in the menu option "Distance to measure in X axis".</li>
+<li>the number after "Y:" (on the bottom-left of the screen) shows total distance covered by the mouse in Y axis (distance unit is the same unit you entered distance during callibration. If you did callibration as in instructions, the unit is milimeter).</li>
+<li>the number after the line "distance left:" (which is in the same line as number described above) shows distance that the mouse should run in the Y axis so that the total distance ran from the last reset command (choosen from the menu) is the distance specified by the user in the menu option "Distance to measure in Y axis".</li>
+</ul>
+<h4>3.6. Exiting the program:</h4>
+When the programm runs, simply press Alt + F4.
+<h4>4. What is suwmiarka??</h4>
+Suwmiarka is the polish word for caliper.

@@ -1,0 +1,2 @@
+class TickException(Exception):
+	pass

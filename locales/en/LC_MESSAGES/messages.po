@@ -1,0 +1,126 @@
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-23 13:20-0400\n"
+"PO-Revision-Date: 2009-09-23 13:22-0500\n"
+"Last-Translator: Marek <mwawrzyczek@gmail.com>\n"
+"Language-Team: marekw2143\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: main_window.py:33
+msgid "Working mode"
+msgstr ""
+
+#: main_window.py:57 main_window.py:58
+msgid "Distance to measure: "
+msgstr ""
+
+#: main_window.py:67 main_window.py:68
+msgid "distance left:"
+msgstr ""
+
+#: miarka.py:70 miarka.py:71
+msgid "calibration"
+msgstr ""
+
+#: miarka.py:108
+msgid "Reset"
+msgstr ""
+
+#: miarka.py:109 miarka.py:178
+msgid "Measuring mode"
+msgstr ""
+
+#: miarka.py:110
+msgid "Distance to measure in X axis"
+msgstr ""
+
+#: miarka.py:111
+msgid "Distance to measure in Y axis"
+msgstr ""
+
+#: miarka.py:112
+msgid "Calibrate Y axis"
+msgstr ""
+
+#: miarka.py:113
+msgid "Calibrate X axis"
+msgstr ""
+
+#: miarka.py:114
+msgid "Finish calibration"
+msgstr ""
+
+#: miarka.py:115
+msgid "Save calibration"
+msgstr ""
+
+#: miarka.py:116
+msgid "Allow calibration"
+msgstr ""
+
+#: miarka.py:159
+#, python-format
+msgid "Distance to measure in %s axis:"
+msgstr ""
+
+#: miarka.py:167
+msgid ""
+"You entered inproper number. You can use arithmetic operators (+, -, * /)"
+msgstr ""
+
+#: miarka.py:174
+msgid ""
+"Enter below \"SUWMIARKA\". \n"
+"It is protection against accidentally changing of the calibration "
+"configuration.\n"
+"Entering word other than \"SUWMIARKA\" or pressing Cancel key simply returns "
+"to the mail menu and doesn't allow calibration.\n"
+"If you choose to allow calibrating, and then with any cause you would like "
+"to turn off allowing calibration, choose option "
+msgstr ""
+
+#: miarka.py:189
+msgid "Error during saving calibration data to file."
+msgstr ""
+
+#: miarka.py:192
+msgid "Calibration data saved correctly"
+msgstr ""
+
+#: miarka.py:207
+#, python-format
+msgid "General distance in axis %s: %s"
+msgstr ""
+
+#: miarka.py:209
+msgid "Enter distance the input device has moved: "
+msgstr ""
+
+#: miarka.py:214
+msgid "Ticks on milimeter in axis "
+msgstr ""
+
+#: miarka.py:214
+#, python-format
+msgid " is: %s"
+msgstr ""
+
+#: miarka.py:223
+#, python-format
+msgid "Starting calibration of axis: %s"
+msgstr ""
+
+#: miarka.py:248
+msgid "Inproper reading from input device."
+msgstr ""
